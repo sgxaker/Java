@@ -18,13 +18,13 @@ public class Library
 		
 		for(int j=0;j<3;j++)
 		{
-		  System.out.println("Dwse First Name: ");
+		  System.out.println("Please provide First Name: ");
 		  String a = input.nextLine();
-		  System.out.println("Dwse Last Name: ");
+		  System.out.println("Please provide Last Name: ");
 		  String b = input.nextLine();
-		  System.out.println("Dwse Title: ");
+		  System.out.println("Please provide Title: ");
 		  String c = input.nextLine();
-		  System.out.println("Dwse Number of Pages: ");
+		  System.out.println("Please provide Number of Pages: ");
 		  int d = input.nextInt();
 		  myBook[j] = new Book(a, b, c, d);
 		  myBook[j].printDetails();
