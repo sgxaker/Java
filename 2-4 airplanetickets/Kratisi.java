@@ -6,9 +6,9 @@ public class Kratisi
 	public static void main( String[] args )
 	{
 		Scanner input= new Scanner(System.in);
-		int epilogh, mpla;
+		int choice, mpla;
 		boolean tmp1, tmp2;
-		epilogh=0;
+		choice=0;
 		mpla=1;
 		
 		seats airplane = new seats();
@@ -17,11 +17,11 @@ public class Kratisi
 		
 		while (mpla!=0)
 		{	
-		System.out.println("Gia na deis tis 8eseis pata 1");
-		System.out.println("Gia na tsekareis an oi 8eseis ths First Class einai gemates pata 2");
-		System.out.println("Gia na tsekareis an oi 8eseis ths First Economy einai gemates pata 3");
-		System.out.println("Gia na kaneis krathsh pata 4");
-		System.out.println("Gia na bgeis apo to programma pata 0");
+		System.out.println("To check the available seats press 1");
+		System.out.println("To check if the First Class is full press 2");
+		System.out.println("To check if the First Economy is full press 3");
+		System.out.println("To make a reservation press 4");
+		System.out.println("To terminate the program press 0");
 		mpla = input.nextInt();
 		input.nextLine();
 		
@@ -41,7 +41,7 @@ public class Kratisi
 		}
 		else
 		{
-			System.out.println("Yparxoun dia8esimes 8eseis");
+			System.out.println("There are available seats");
 		}
 		break;
 		
@@ -53,16 +53,16 @@ public class Kratisi
 		}
 		else
 		{
-			System.out.println("Yparxoun dia8esimes 8eseis");
+			System.out.println("There are available seats");
 		}
 		break;
 		
 		case 4:
 
-			System.out.println("Gia First Class pata 1, gia Economy Class pata 2");
-			epilogh = input.nextInt();
+			System.out.println("For First Class press 1, for Economy Class press 2");
+			choice = input.nextInt();
 			input.nextLine();
-			airplane.getSeat(epilogh);
+			airplane.getSeat(choice);
 			break;
 		case 0:
 		 break;
