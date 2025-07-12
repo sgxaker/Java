@@ -59,7 +59,7 @@ public class Seat
 				if(seat[i]==false)
 				{
 					seat[i]=true;
-					System.out.println("H krathsh egine sthn 8esh: " + (i+1) +(" ths First Class"));
+					System.out.println("Booking completed your seat is: " + (i+1) +(" ths First Class"));
 					System.out.println();
 					System.out.println();
 					break;
@@ -73,14 +73,14 @@ public class Seat
 				if(seat[i]==false)
 				{
 					seat[i]=true;
-					System.out.println("H krathsh egine sthn 8esh: " + (i+1) +("ths Economy Class"));
+					System.out.println("Booking completed your seat is: " + (i+1) +("ths Economy Class"));
 					break;
 				}
 			}
 		}
 		else
 		{
-			System.out.println("H Class pou diale3es einai gemath.");
+			System.out.println("The Class you picked is full");
 		}
 	}
 }
